@@ -6,4 +6,4 @@ struts2版本2.5.14.1_
 -  interceptor
 -  OGNL
 >something
->ad
+>add
