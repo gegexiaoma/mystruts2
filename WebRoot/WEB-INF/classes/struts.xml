@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+	
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.locale" value="zh_CN" />
+	<constant name="struts.i18n.encoding" value="gb2312" />
+	
+	<package name="default" extends="struts-default">
+		<action name="helloworldAction" class="com.struts2.action.HelloWorldAction" method="execute">
+			<interceptor-ref name="basicStack"/>
+			<interceptor-ref name="timer"/>
+			<result name="toWelcome">/WEB-INF/welcome.jsp</result>
+			
+			
+		</action>
+	</package>
+</struts>
