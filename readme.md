@@ -6,6 +6,7 @@ struts2版本2.5.14.1
 -  result
 -  interceptor
 -  OGNL
+- tags
 >something
 >add
     first
